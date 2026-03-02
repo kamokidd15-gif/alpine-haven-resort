@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico">
+  <title>Alpine Haven Resort | Contact</title>
+
+  <meta name="author" content="Hunter Williams">
+  <meta name="description" content="Contact Alpine Haven Resort with questions or concerns and plan your dream vacation in the Swiss Alps.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact">
+  <div class="page">
+
+    <!-- ================= HEADER (same as home) ================= -->
+    <header class="site-header">
+      <h1 class="site-title">
+        <a href="index.html">Alpine Haven Resort</a>
+      </h1>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Accommodations</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero image (background added in CSS) -->
+      <div class="hero"></div>
+    </header>
+    <!-- ================= END HEADER ================= -->
+
+
+    <!-- ================= MAIN ================= -->
+    <main class="site-main">
+
+      <section class="contact-grid">
+
+        <!-- Left column: heading + text + required note + image -->
+        <section class="contact-left" aria-label="Contact information">
+          <h2>Contact Us</h2>
+
+          <p class="measure">
+            Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+          </p>
+
+          <p class="required-note"><span class="req">*</span> Required fields marked with a *</p>
+
+          <img
+            src="images/swiss-peak.jpg"
+            alt="A tall Swiss mountain peak rising above the valley"
+            width="560"
+            height="840"
+          >
+        </section>
+
+        <!-- Right column: form -->
+        <section class="contact-right" aria-label="Contact form">
+          <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+
+            <div class="field">
+              <label for="fullName">Full name <span class="req">*</span></label>
+              <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="field">
+              <label for="email">Email address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone number <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <fieldset class="field">
+              <legend>Preferred contact method <span class="req">*</span></legend>
+
+              <div class="radio-row">
+                <input type="radio" id="prefEmail" name="contactPreference" value="email" required>
+                <label for="prefEmail">Email</label>
+              </div>
+
+              <div class="radio-row">
+                <input type="radio" id="prefPhone" name="contactPreference" value="phone" required>
+                <label for="prefPhone">Phone</label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="comments">Comments <span class="req">*</span></label>
+              <textarea id="comments" name="comments" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+
+          </form>
+        </section>
+
+      </section>
+
+    </main>
+    <!-- ================= END MAIN ================= -->
+
+
+    <!-- ================= FOOTER (same as home) ================= -->
+    <footer class="site-footer">
+      <p>Copyright &copy;2023 - Alpine Haven Resort</p>
+      <p>This site is for educational purposes only</p>
+    </footer>
+    <!-- ================= END FOOTER ================= -->
+
+  </div>
+</body>
+</html>
